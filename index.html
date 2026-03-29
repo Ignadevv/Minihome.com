@@ -2689,18 +2689,39 @@
   </section>
 
   <!-- VIDEO TOUR -->
-  <section id="videotour" style="background:var(--dark);padding:5rem 8rem;">
-    <div style="text-align:center;margin-bottom:2.5rem;">
-      <p class="s-tag" style="justify-content:center;">Recorrido virtual</p>
-      <h2 class="s-title">Video Tour<br><span style="color:var(--accent);">Mini Home</span></h2>
-      <p class="s-sub" style="margin:1rem auto 0;text-align:center;">Recorre cada rincón del departamento antes de
-        visitarlo en persona.</p>
+  <section id="videotour" class="section reveal" style="background:var(--dark); padding: 4rem 2vw;">
+    <div style="text-align:center; margin-bottom:3rem; padding: 0 1rem;">
+      <div style="display:flex; align-items:center; justify-content:center; gap:1rem; margin-bottom:1.5rem;">
+        <div style="width:40px; height:2px; background:var(--accent); opacity:.3;"></div>
+        <p class="s-tag" style="margin:0; letter-spacing:.3em;" data-es="Recorrido virtual" data-en="Virtual Tour">Recorrido virtual</p>
+        <div style="width:40px; height:2px; background:var(--accent); opacity:.3;"></div>
+      </div>
+      <h2 class="s-title" style="font-size: clamp(2.5rem, 8vw, 4.5rem);">
+        <span data-es="Video Tour" data-en="Video Tour">Video Tour</span><br>
+        <span style="color:var(--accent); text-shadow: 0 0 20px var(--accent-shadow);" data-es="Mini Home" data-en="Mini Home">Mini Home</span>
+      </h2>
+      <p class="s-sub" style="margin:1.5rem auto 0; text-align:center; max-width: 500px;" data-es="Recorre cada rincón del departamento antes de visitarlo en persona." data-en="Take a virtual walk through every corner of the apartment before visiting in person.">
+        Recorre cada rincón del departamento antes de visitarlo en persona.
+      </p>
     </div>
-    <div style="position:relative;max-width:800px;margin:0 auto;border:1px solid rgba(0,194,203,.2);overflow:hidden;">
-      <video controls playsinline poster="images/portada.jpeg" style="width:100%;display:block;background:#000;">
-        <source src="https://res.cloudinary.com/dpv0c3hpk/video/upload/v1773105612/videotour_opfrsg.mp4"
-          type="video/mp4" />
-      </video>
+    
+    <div style="position:relative; max-width:900px; margin:0 auto; padding: 0 1rem;">
+      <!-- Frame decorativo -->
+      <div style="
+        position:relative; 
+        border-radius:24px; 
+        overflow:hidden; 
+        border:1px solid rgba(0, 224, 235, 0.3); 
+        box-shadow: 0 25px 60px rgba(0, 224, 235, 0.15);
+        background: #000;
+      ">
+        <video controls playsinline poster="images/portada.jpeg" style="width:100%; display:block; aspect-ratio: 16/9; object-fit: cover;">
+          <source src="https://res.cloudinary.com/dpv0c3hpk/video/upload/v1773105612/videotour_opfrsg.mp4" type="video/mp4" />
+        </video>
+        
+        <!-- Efecto de brillo en esquinas -->
+        <div style="position:absolute; top:0; left:0; width:100%; height:100%; pointer-events:none; border-radius:24px; box-shadow: inset 0 0 40px rgba(0, 224, 235, 0.05);"></div>
+      </div>
     </div>
   </section>
   <section id="depa" class="section">
