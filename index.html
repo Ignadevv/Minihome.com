@@ -1877,13 +1877,16 @@
         display: none;
         position: fixed;
         inset: 0;
-        background: var(--bg);
+        background: rgba(6, 6, 6, 0.92);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 3rem;
         z-index: 400;
         font-size: 1.5rem;
+        border-bottom: 1px solid var(--accent);
       }
 
       .nav-links.active {
