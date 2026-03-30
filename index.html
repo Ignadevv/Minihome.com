@@ -2455,6 +2455,28 @@
       animation: radarExpand 3.2s ease-out infinite 2.4s;
     }
 
+    /* ── MOBILE BUTTON OPTIMIZATIONS ── */
+    @media (max-width: 768px) {
+      .wa-float {
+        width: 50px;
+        height: 50px;
+        bottom: 1.5rem;
+        right: 1.5rem;
+        font-size: 1.5rem;
+      }
+      .unit-link-badge {
+        padding: 0.7rem 1.4rem;
+        font-size: 0.85rem;
+        bottom: 1.5rem;
+      }
+      .asesor-wrap {
+        padding: 2rem;
+      }
+      .asesor-photo {
+        width: 120px;
+        height: 120px;
+      }
+    }
   </style>
 </head>
 
@@ -3199,83 +3221,14 @@
       </div>
       <div style="position:relative;height:450px;border-radius:24px;overflow:hidden;border:1px solid var(--glass-border);box-shadow:0 20px 50px rgba(0,0,0,0.3);">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m12!1m3!1d3901.0!2d-77.0!3d-12.09!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c86868686868%3A0x6868686868686868!2sCalle%20Sigma%20E67%2C%20San%20Borja%2015037!5e0!3m2!1ses!2spe!4v1700000000000"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15602.132865912444!2d-77.009!3d-12.09!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c86868686868%3A0x6868686868686868!2sSan%20Borja%2C%20Lima!5e0!3m2!1ses!2spe!4v1700000000000"
           width="100%" height="100%" style="border:0;filter:grayscale(1) invert(0.9) contrast(1.2);" allowfullscreen=""
           loading="lazy"></iframe>
       </div>
     </div>
   </section>
 
-  <!-- CONTACTO -->
-  <section id="contacto" class="section reveal">
-    <div style="margin-bottom:4rem;">
-      <p class="s-tag" data-es="Escríbenos" data-en="Contact us">Escríbenos</p>
-      <h2 class="s-title" data-es="¿Listo para dar el siguiente paso?" data-en="Ready to take the next step?">¿Listo
-        para dar el siguiente paso?</h2>
-    </div>
-    <div class="contact-grid">
-      <div>
-        <div class="form-row">
-          <div class="form-group"><label data-es="Nombre" data-en="First name">Nombre</label><input type="text"
-              placeholder="Tu nombre" data-placeholder-es="Tu nombre" data-placeholder-en="Your first name" /></div>
-          <div class="form-group"><label data-es="Apellido" data-en="Last name">Apellido</label><input type="text"
-              placeholder="Tu apellido" data-placeholder-es="Tu apellido" data-placeholder-en="Your last name" /></div>
-        </div>
-        <div class="form-row">
-          <div class="form-group"><label>WhatsApp</label><input type="tel" placeholder="+51 9XX XXX XXX" /></div>
-          <div class="form-group"><label data-es="Correo" data-en="Email">Correo</label><input type="email"
-              placeholder="correo@ejemplo.com" data-placeholder-es="correo@ejemplo.com"
-              data-placeholder-en="email@example.com" /></div>
-        </div>
-        <div class="form-group">
-          <label data-es="¿Qué necesitas?" data-en="What do you need?">¿Qué necesitas?</label>
-          <select>
-            <option value="" data-es="Selecciona una opción" data-en="Select an option">Selecciona una opción</option>
-            <option data-es="Consultar disponibilidad" data-en="Check availability">Consultar disponibilidad</option>
-            <option data-es="Agendar una visita" data-en="Schedule a visit">Agendar una visita</option>
-            <option data-es="Información de precios" data-en="Pricing information">Información de precios</option>
-            <option data-es="Otra consulta" data-en="Other inquiry">Otra consulta</option>
-          </select>
-        </div>
-        <div class="form-group"><label data-es="Mensaje" data-en="Message">Mensaje</label><textarea
-            placeholder="¿En qué podemos ayudarte?" data-placeholder-es="¿En qué podemos ayudarte?"
-            data-placeholder-en="How can we help you?"></textarea></div>
-        <button class="btn-wa" onclick="sendWA()" style="margin-top:.5rem;" data-es="💬 Enviar por WhatsApp"
-          data-en="💬 Send via WhatsApp">💬 Enviar por WhatsApp</button>
-      </div>
-      <div class="contact-info">
-        <div class="c-item">
-          <div class="c-ico">📍</div>
-          <div><strong data-es="Dirección" data-en="Address">Dirección</strong>
-            <p>C. Sigma E67, San Borja 15037<br>Lima, Perú</p>
-          </div>
-        </div>
-        <div class="c-item">
-          <div class="c-ico">📞</div>
-          <div><strong>WhatsApp · Jesús Bernales</strong>
-            <p>+51 966 660 453<br><span data-es="Lunes a Sábado · 9am – 7pm"
-                data-en="Monday to Saturday · 9am – 7pm">Lunes a Sábado · 9am – 7pm</span></p>
-          </div>
-        </div>
-        <div class="c-item">
-          <div class="c-ico">🏠</div>
-          <div><strong data-es="Tipo de alquiler" data-en="Rental type">Tipo de alquiler</strong>
-            <p data-es="Solo alquiler · Amoblado<br>10 departamentos disponibles"
-              data-en="Rental only · Furnished<br>10 units available">Solo alquiler · Amoblado<br>10 departamentos
-              disponibles</p>
-          </div>
-        </div>
-        <div class="c-item">
-          <div class="c-ico">📅</div>
-          <div><strong data-es="Visitas" data-en="Visits">Visitas</strong>
-            <p data-es="Con cita previa<br>Coordina directamente con Jesús"
-              data-en="By appointment only<br>Coordinate directly with Jesús">Con cita previa<br>Coordina directamente
-              con Jesús</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+
 
   <!-- FOOTER -->
   <footer>
